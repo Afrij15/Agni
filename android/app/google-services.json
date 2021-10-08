@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "589160976575",
+    "project_id": "wasthu-1add3",
+    "storage_bucket": "wasthu-1add3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589160976575:android:7826a17e88e4b1f66eb60a",
+        "android_client_info": {
+          "package_name": "com.peaky.wasthu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589160976575-hrluf1b4blrq2p18orbjs57082tu35cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf-AK7nk-VYtnBQ5zDLBhvp9FmapJwiiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589160976575-hrluf1b4blrq2p18orbjs57082tu35cf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
