@@ -59,7 +59,7 @@ class _SigninState extends State<Signin> {
                                       style: TextStyle(
                                         fontSize: 25,
                                         fontFamily: 'Poppins',
-                                        color: Colors.black,
+                                        color: Colors.red,
                                         fontWeight: FontWeight.bold,
                                       ),
                                       textAlign: TextAlign.center),
