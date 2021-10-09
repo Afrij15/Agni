@@ -11,7 +11,7 @@ class Cart extends StatelessWidget {
           title: Text('Cart'),
         ),
         body: Center(
-          child: Text('Cart Empty'),
+          child: Text('Cart Empty, Please Load More'),
         ));
   }
 }
