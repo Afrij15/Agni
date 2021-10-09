@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialData: Userid(uid: ''),
       child: MaterialApp(
         theme: ThemeData(primarySwatch: Colors.lightBlue),
-        debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: true,
         home: Wrapper(),
       ),
     );
