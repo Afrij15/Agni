@@ -9,6 +9,7 @@ class CartController extends GetxController {
       _products[product] += 1;
     } else {
       _products[product] = 1;
+      // this adds a product
     }
   }
 }
