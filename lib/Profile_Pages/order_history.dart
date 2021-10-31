@@ -63,16 +63,16 @@ class _OrdersState extends State<Orders> {
         return Center(child: Text('Empty'));
       },
     ),
-    Center(child: Text('hi'))
+    Center(child: Text('Hello'))
   ];
-
+ // This function is for Ongoing orders
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.yellow[700],
+          backgroundColor: Colors.yellow[800],
           title: Text('Orders'),
           bottom: TabBar(
             tabs: [

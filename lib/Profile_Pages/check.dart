@@ -23,11 +23,11 @@ class _GetUserNameState extends State<GetUserName> {
       builder:
           (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
         if (snapshot.hasError) {
-          return Text("Something went wrong");
+          return Text("Something went wrong in here");
         }
 
         if (snapshot.hasData && !snapshot.data!.exists) {
-          return Text("Document does not exist");
+          return Text("Document does not exists");
         }
 
         if (snapshot.connectionState == ConnectionState.done) {
@@ -37,7 +37,7 @@ class _GetUserNameState extends State<GetUserName> {
           return Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.pink[100],
-              title: Text('Wishlist'),
+              title: Text('Your Wishlist'),
             ),
             body: ListView(
               children: const <Widget>[
