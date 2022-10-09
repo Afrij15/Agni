@@ -31,9 +31,9 @@ class _SignUpState extends State<SignUp> {
   bool loading = false;
 
   //text field
-  String name = '';
-  String email = '';
-  String password = '';
+  String new_name = '';
+  String new_email = '';
+  String new_password = '';
   String error = '';
 
   @override
@@ -84,7 +84,7 @@ class _SignUpState extends State<SignUp> {
                                   decoration: textInputDecorforAuth.copyWith(
                                       hintText: 'Name'),
                                   onChanged: (val) {
-                                    setState(() => name = val);
+                                    setState(() => new_name = val);
                                   },
                                 ),
                                 SizedBox(
@@ -100,7 +100,7 @@ class _SignUpState extends State<SignUp> {
                                   decoration: textInputDecorforAuth.copyWith(
                                       hintText: 'Email'),
                                   onChanged: (val) {
-                                    setState(() => email = val);
+                                    setState(() => new_email = val);
                                   },
                                 ),
                                 SizedBox(
@@ -114,7 +114,7 @@ class _SignUpState extends State<SignUp> {
                                       hintText: 'Password'),
                                   obscureText: true,
                                   onChanged: (val) {
-                                    setState(() => password = val);
+                                    setState(() => new_password = val);
                                   },
                                 ),
                                 SizedBox(
@@ -137,14 +137,14 @@ class _SignUpState extends State<SignUp> {
                                               email, password);*/
                                       dynamic res = await _firebaseAuth
                                           .createUserWithEmailAndPassword(
-                                              email: email, password: password)
+                                              new_email: new_email, new_password: new_password)
                                           .then((value) => {
                                                 FirebaseFirestore.instance
                                                     .collection('customer')
                                                     .doc(value.user!.uid)
                                                     .set({
-                                                  "email": email,
-                                                  "name": name,
+                                                  "email": new_email,
+                                                  "name": new_name,
                                                   "phone": '',
                                                   "address": ''
                                                 })

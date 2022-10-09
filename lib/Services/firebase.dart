@@ -22,7 +22,7 @@ class DatabaseService {
   List<WasthUser> _wasthUserListFromSnapshot(QuerySnapshot snapshot) {
     return snapshot.docs.map((doc) {
       //print(doc.data);
-      return WasthUser(name: doc['name'] ?? '', email: doc['email'] ?? '');
+      return WasthUser(new_name: doc['name'] ?? '', new_email: doc['email'] ?? '');
     }).toList();
   }
 
