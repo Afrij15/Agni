@@ -17,8 +17,8 @@ class _UserCollState extends State<UserColl> {
     //print(users.docs
     // );
     usersd.forEach((usersd) {
-      print(usersd.email);
-      print(usersd.name);
+      print(usersd.new_email);
+      print(usersd.new_name);
     });
     return Container();
   }
