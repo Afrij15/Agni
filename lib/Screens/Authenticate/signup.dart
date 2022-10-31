@@ -59,7 +59,7 @@ class _SignUpState extends State<SignUp> {
                             bottomLeft: Radius.circular(40),
                             bottomRight: Radius.circular(40),
                           ),
-                          color: Colors.white),
+                          color: Colors.blue),
                       child: SingleChildScrollView(
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(10.0, 0, 10.0, 0),
