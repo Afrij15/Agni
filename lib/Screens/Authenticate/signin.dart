@@ -45,7 +45,7 @@ class _SigninState extends State<Signin> {
                             bottomLeft: Radius.circular(20),
                             bottomRight: Radius.circular(20),
                           ),
-                          color: Colors.white),
+                          color: Colors.blue),
                       child: SingleChildScrollView(
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(10.0, 0, 10.0, 0),
